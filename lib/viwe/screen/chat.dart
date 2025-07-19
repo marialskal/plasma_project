@@ -116,7 +116,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.primaryColor,
+      backgroundColor: const Color.fromARGB(255, 243, 237, 220),
       appBar: AppBar(
         title: const Text('استشارتك'),
         backgroundColor: AppColor.back,

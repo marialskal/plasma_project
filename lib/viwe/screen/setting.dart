@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:scholar_chat/core/constant/color.dart';
 import 'package:scholar_chat/provider/provider.dart';
 import 'package:provider/provider.dart';
+import 'package:scholar_chat/viwe/screen/about.dart';
+import 'package:scholar_chat/viwe/screen/box.dart';
 import 'package:scholar_chat/viwe/screen/mybooking.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -133,7 +135,12 @@ class _SettingsPageState extends State<SettingsPage> {
                         ListTile(
                           leading: Icon(Icons.comment_rounded, color: AppColor.back),
                           title: const Text("Complaints Box"),
-                          onTap: () {},
+                          onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const ComplaintPage()),
+                    );
+                  },
                         ),
                       ListTile(
                         leading: Icon(Icons.event_note_outlined, color: AppColor.back),
@@ -147,7 +154,12 @@ class _SettingsPageState extends State<SettingsPage> {
                         ListTile(
                           leading: Icon(Icons.help_outline_rounded, color: AppColor.back),
                           title: const Text("About App"),
-                          onTap: () {},
+                         onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const AboutAppPage()),
+                    );
+                  },
                         ),
                         ListTile(
                           leading: Icon(Icons.phone_callback_outlined, color: AppColor.back),
